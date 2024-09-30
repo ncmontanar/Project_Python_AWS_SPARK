@@ -1,0 +1,20 @@
+  - 1.2 Autoriser les outgoings
+    - Aller au :
+            EC2/Security Groups/ ie.mysecuritygroupe - launch-wizard-1/Edit outbound rules
+    - Modifir les regles 
+        SSH  -> Custom 
+        all traffic -> MyIP
+        all traffic -> Anywhere     
+
+
+  - 1.2 Se connecter à l'instance :
+
+
+    Open an SSH client.
+
+    Locate your private key file. The key used to launch this instance is *stock-market-tracker-aws3-cle.pem*
+
+    Run this command, if necessary, to ensure your key is not publicly viewable.
+     *chmod 400 "stock-market-tracker-aws3-cle.pem"*
+
+    Connect to your instance using its Public DNS:
